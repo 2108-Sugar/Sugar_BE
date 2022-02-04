@@ -1,0 +1,67 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/Users/christianvalesares/mod4/projects/sugar_be/app/models/community.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/christianvalesares/mod4/projects/sugar_be/app/models/application_record.rb": {
+        "lines": [
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/christianvalesares/mod4/projects/sugar_be/spec/models/request_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          2,
+          2,
+          2,
+          null,
+          null
+        ]
+      },
+      "/Users/christianvalesares/mod4/projects/sugar_be/app/models/request.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          1,
+          null
+        ]
+      },
+      "/Users/christianvalesares/mod4/projects/sugar_be/spec/models/user_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          2,
+          2,
+          null,
+          null
+        ]
+      },
+      "/Users/christianvalesares/mod4/projects/sugar_be/app/models/user.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          1,
+          null
+        ]
+      }
+    },
+    "timestamp": 1644014723
+  }
+}
