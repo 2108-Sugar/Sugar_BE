@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_02_04_224437) do
+ActiveRecord::Schema.define(version: 2022_02_05_151447) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -24,7 +24,7 @@ ActiveRecord::Schema.define(version: 2022_02_04_224437) do
   create_table "requests", force: :cascade do |t|
     t.string "name"
     t.string "details"
-    t.string "type"
+    t.string "item_category"
     t.integer "status"
     t.datetime "borrow_date"
     t.datetime "return_date"
