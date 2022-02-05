@@ -5,4 +5,8 @@ RSpec.describe Community, type: :model do
     it { should have_many :requests }
     it { should have_many :users }
   end
+
+  describe 'validations' do
+    it { should validate_presence_of(:name) }
+  end
 end
