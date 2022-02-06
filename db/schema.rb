@@ -25,7 +25,7 @@ ActiveRecord::Schema.define(version: 2022_02_06_185905) do
     t.string "name"
     t.string "details"
     t.string "item_category"
-    t.integer "status"
+    t.integer "status", default: 0
     t.date "borrow_date"
     t.date "return_date"
     t.bigint "requested_by_id"
