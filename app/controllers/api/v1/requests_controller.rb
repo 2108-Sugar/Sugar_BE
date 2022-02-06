@@ -11,12 +11,8 @@ class Api::V1::RequestsController < ApplicationController
     end
   end
 
-  def new
-  end
-
   def create
     request = Request.create(request_params)
-
     if request.save
       render json: RequestSerializer.new(Request.find(request.id)), status: 201
     else
