@@ -4,7 +4,7 @@ class CreateRequest < ActiveRecord::Migration[6.1]
       t.string :name
       t.string :details
       t.string :type
-      t.integer :status
+      t.integer :status, default: 0
       t.datetime :borrow_date
       t.datetime :return_date
       t.references :requested_by
