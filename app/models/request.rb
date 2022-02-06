@@ -6,9 +6,9 @@ class Request < ApplicationRecord
   validates :name, presence: true
   validates :details, presence: true
   validates :item_category, presence: true
-  validates :status, presence: true, numericality: true
-  validates :borrow_date, presence: true
-  validates :return_date, presence: true
+  validates :status, presence: true
+  # validates :borrow_date, presence: true
+  # validates :return_date, presence: true
   validates :requested_by_id, presence: true, numericality: true
   validates :community_id, presence: true, numericality: true
 
