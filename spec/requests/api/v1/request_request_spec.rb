@@ -10,9 +10,10 @@ describe 'Request API' do
     @user_4 = User.create!(name: "Chloe Kim", email: "chloe@fake.com", username: "superpipeslayer34", community_id: @community_1.id)
     @user_5 = User.create!(name: "Dwight Schrute", email: "dwight@fake.com", username: "bearsbeetsbg", community_id: @community_1.id)
 
-    @request_1 = Request.create!(name: "claw hammer", details: "I need a hammer for nothing nefarious.", item_category: "tools", status: 0, borrow_date: "02/15/2022", return_date: "02/16/2022", requested_by_id: @user_1.id, community_id: @community_1.id, lender_id: nil)
-    @request_2 = Request.create!(name: "ski mask", details: "will wash and dry before return", item_category: "sporting goods", status: 1, borrow_date: "02/21/2022", return_date: "02/24/2022", requested_by_id: @user_5.id, community_id: @community_1.id, lender_id: @user_3.id)
-    @request_3 = Request.create!(name: "knife", details: "butcher knife preferred", item_category: "kitchen", status: 2, borrow_date: "02/17/2022", return_date: "02/17/2022", requested_by_id: @user_2.id, community_id: @community_1.id, lender_id: @user_1.id)
+    #run this by FE to show how dates are deserialized when we pass as json
+    @request_1 = Request.create!(name: "claw hammer", details: "I need a hammer for nothing nefarious.", item_category: "tools", status: 0, borrow_date: 'Thu, 15 Feb 2022', return_date: 'Thu, 17 Feb 2022', requested_by_id: @user_1.id, community_id: @community_1.id, lender_id: nil)
+    @request_2 = Request.create!(name: "ski mask", details: "will wash and dry before return", item_category: "sporting goods", status: 1, borrow_date: '2022-02-21', return_date: '2022-02-24', requested_by_id: @user_5.id, community_id: @community_1.id, lender_id: @user_3.id)
+    @request_3 = Request.create!(name: "knife", details: "butcher knife preferred", item_category: "kitchen", status: 2, borrow_date: "2022-02-17", return_date: "2022-02-17", requested_by_id: @user_2.id, community_id: @community_1.id, lender_id: @user_1.id)
   end
 
   it 'happy path - can get all requests' do
@@ -32,9 +33,9 @@ describe 'Request API' do
       expect(request[:attributes]).to have_key(:status)
       expect(request[:attributes][:status]).to be_a(String)
       expect(request[:attributes]).to have_key(:borrow_date)
-      # expect(request[:attributes][:borrow_date]).to be_a(String)
+      expect(request[:attributes][:borrow_date]).to be_a(String)
       expect(request[:attributes]).to have_key(:return_date)
-      # expect(request[:attributes][:return_date]).to be_a(String)
+      expect(request[:attributes][:return_date]).to be_a(String)
       expect(request[:attributes]).to have_key(:requested_by_id)
       expect(request[:attributes][:requested_by_id]).to be_an(Integer)
       expect(request[:attributes]).to have_key(:lender_id)
@@ -66,8 +67,8 @@ describe 'Request API' do
               details: 'need to do dishes',
               item_category: 'kitchen',
               status: 0,
-              borrow_date: "02/17/2022",
-              return_date: "02/18/2022",
+              borrow_date: "2022-02-17",
+              return_date: "2022-02-18",
               requested_by_id: @user_4.id,
               community_id: @community_1.id
             }
@@ -86,8 +87,8 @@ describe 'Request API' do
               details: 'need to do dishes',
               item_category: 'kitchen',
               status: 0,
-              borrow_date: "02/17/2022",
-              return_date: "02/18/2022",
+              borrow_date: "2022-02-17",
+              return_date: "2022-02-18",
               requested_by_id: @user_4.id,
               community_id: @community_1.id
             }
@@ -102,8 +103,8 @@ describe 'Request API' do
                       details: 'I need a hammer for nothing nefarious.',
                       item_category: 'tools',
                       status: 0,
-                      borrow_date: "02/15/2022",
-                      return_date: "02/16/2022",
+                      borrow_date: "2022-02-15",
+                      return_date: "2022-02-16",
                       requested_by_id: @user_1.id,
                       community_id: @community_1.id,
                       lender_id: @user_5.id
@@ -125,8 +126,8 @@ describe 'Request API' do
                       details: '',
                       item_category: 'tools',
                       status: 0,
-                      borrow_date: "02/15/2022",
-                      return_date: "02/16/2022",
+                      borrow_date: "2022-02-15",
+                      return_date: "2022-02-16",
                       requested_by_id: @user_1.id,
                       community_id: @community_1.id,
                       lender_id: @user_5.id
@@ -142,7 +143,7 @@ describe 'Request API' do
   end
 
   it 'can delete a request' do
-    request_5 = Request.create!(name: "tent", details: "camping trip over the weekend", item_category: "sporting goods", status: 0, borrow_date: "02/22/2022", return_date: "02/24/2022", requested_by_id: @user_3.id, community_id: @community_1.id, lender_id: nil)
+    request_5 = Request.create!(name: "tent", details: "camping trip over the weekend", item_category: "sporting goods", status: 0, borrow_date: "2022-02-22", return_date: "2022-02-24", requested_by_id: @user_3.id, community_id: @community_1.id, lender_id: nil)
 
     expect(Request.count).to eq(4)
 
