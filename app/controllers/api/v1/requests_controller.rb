@@ -1,4 +1,5 @@
 class Api::V1::RequestsController < ApplicationController
+#keep index and show for community requests?
   def index
     render json: RequestSerializer.new(Request.all)
   end
@@ -11,6 +12,7 @@ class Api::V1::RequestsController < ApplicationController
     end
   end
 
+#move all CRUD into a user_requests controller?
   def create
     request = Request.create(request_params)
     if request.save
