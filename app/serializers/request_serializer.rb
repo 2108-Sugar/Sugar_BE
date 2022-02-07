@@ -5,8 +5,17 @@ class RequestSerializer
   attributes :borrow_date do |object|
     object.borrow_date.strftime("%m-%d-%y")
   end
+
   attributes :return_date do |object|
     object.return_date.strftime("%m-%d-%y")
   end
-  #we can parse timestamps similarly if FE needs
+
+  attributes :created_at do |object|
+    object.created_at.strftime("%m-%d-%y %H:%m")
+  end
+
+  attributes :updated_at do |object|
+    object.updated_at.strftime("%m-%d-%y %H:%m")
+  end
+
 end
