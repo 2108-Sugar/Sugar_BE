@@ -1,5 +1,6 @@
 #!/bin/bash
 cd /var/www/html
+gem install bundler
 bundle install
 bundle update
 #RAILS_ENV=production bundle install --path vendor/bundle
