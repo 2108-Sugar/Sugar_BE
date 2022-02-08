@@ -38,9 +38,6 @@ end
 
 group :development do
   gem 'listen', '~> 3.3'
-  gem 'capistrano'
-  gem 'capistrano-rails'
-  gem 'capistrano-db-tasks'
 end
 
 group :test do
