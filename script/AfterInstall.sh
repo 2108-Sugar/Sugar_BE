@@ -1,5 +1,6 @@
 #!/bin/bash
 cd /var/www/html
+bundle update
 #RAILS_ENV=production bundle install --path vendor/bundle
 rake db:migrate
 #RAILS_ENV=production bundle exec rake db:migrate
