@@ -90,4 +90,4 @@ workflows:
           bundle-bucket: sugarcodedeploy
           bundle-key: code/source
           deployment-group: circle_ci_codedeploy
-          service-role-arn: arn:aws:iam::630539508201:role/AWSCodeDeployRole
+          service-role-arn: AWSCodeDeployRole
