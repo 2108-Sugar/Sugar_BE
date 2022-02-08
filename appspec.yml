@@ -3,6 +3,9 @@ os: linux
 files:
   - source: /
     destination: /var/www/html/
+permissions:
+  - object: /var/www/html/
+    owner: deploy
 hooks:
   AfterInstall:
     - location: script/AfterInstall.sh
