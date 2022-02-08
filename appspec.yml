@@ -6,7 +6,7 @@ files:
 permissions:
   - object: /var/www/html
     owner: deploy
-    mode: 777
+    mode: 666
     type:
       - directory
 hooks:
