@@ -7,7 +7,8 @@ permissions:
   - object: /var/www/html
     owner: deploy
     mode: 777
-    type: - directory
+    type:
+      - directory
 hooks:
   AfterInstall:
     - location: script/AfterInstall.sh
