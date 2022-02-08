@@ -5,8 +5,6 @@ Rails.application.routes.draw do
       resources :users do
         resources :communities do
           resources :requests
-        #resources :user, only: [:update]
-          # resources :requests
         end
       end
     end
