@@ -82,5 +82,5 @@ test:
 production:
   <<: *default
   database: sugar_be_production
-  username: deploy
-  password: gH8UpYUpK6cxPES
+  username: sugar_be
+  password: <%= ENV['SUGAR_BE_DATABASE_PASSWORD'] %>
