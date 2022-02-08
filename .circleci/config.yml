@@ -86,8 +86,8 @@ workflows:
       - aws-code-deploy/deploy:
           # requires:
           #   - test
-          application-name: sugarcodedeploy
+          application-name: sugar_codedeploy
           bundle-bucket: sugarcodedeploy
-          bundle-key: arn:aws:kms:us-east-1:630539508201:alias/aws/s3
+          bundle-key: code/source
           deployment-group: circle_ci_codedeploy
           service-role-arn: arn:aws:iam::630539508201:role/AWSCodeDeployRole
