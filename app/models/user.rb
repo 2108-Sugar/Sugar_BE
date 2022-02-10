@@ -6,9 +6,8 @@ class User < ApplicationRecord
   validates :name, presence: true
   validates :username, presence: true
   validates :email, presence: true
-  # validates :password_digest, presence: true
   validates :community_id, presence: true, numericality: true
+  # validates :password_digest, presence: true
   # validates :password_confirmation, presence: true
-  #
   # has_secure_password
 end
