@@ -57,8 +57,10 @@ describe 'Request API' do
 
   it 'sad path - sends an error code if request does not exist' do
     get "/api/v1/users/#{@user_1.id}/communities/#{@community_1.id}/requests/10000"
+    error = (JSON.parse(response.body, symbolize_names: true))[:errors][:details]
 
     expect(response.status).to eq(404)
+    expect(error).to eq("Request not found")
   end
 
   it 'happy path - can create a new request' do
@@ -93,7 +95,10 @@ describe 'Request API' do
             }
     post "/api/v1/users/#{@user_1.id}/communities/#{@community_1.id}/requests", headers: {"Content-Type": "application/json"}, params: params.to_json
 
+    error = (JSON.parse(response.body, symbolize_names: true))[:errors][:details]
+
     expect(response.status).to eq(400)
+    expect(error).to eq("There was an error creating this request")
   end
 
   it 'can update a request' do
@@ -136,9 +141,13 @@ describe 'Request API' do
 
     patch "/api/v1/users/#{@user_1.id}/communities/#{@community_1.id}/requests/#{@request_1.id}", headers: header, params: JSON.generate(request_params)
 
+    error = (JSON.parse(response.body, symbolize_names: true))[:errors][:details]
+
     request = Request.find_by(id: @request_1.id)
 
     expect(response.status).to eq(400)
+    expect(error).to eq("There was an error updating this request")
+    expect(request.details).to_not eq('')
   end
 
   it 'can delete a request' do
