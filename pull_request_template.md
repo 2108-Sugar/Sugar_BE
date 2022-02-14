@@ -1,27 +1,16 @@
-### Project Management
+### Why This Change is Needed
+- x
 
-Closes #
+### What is Being Changed
+- x
+
+### QA Steps/Checklist
+- [ ]
+- [ ]
+- [ ]
+- [ ]
 
 ------------------------------------------------------------------------------
-### Test coverage
 
-* [ ] 100% Model Testing
-* [ ] 100% Feature Testing
-
-If below 100%, what still needs testing:
-- x
-
-------------------------------------------------------------------------------
-### Change Log
-
-What I did:
-- x
-
-Things to consider:
-- x
-
-What needs to be refactored:
-- x
-
-What still needs help:
+### Additional Dev Notes
 - x
