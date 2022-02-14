@@ -77,7 +77,7 @@ workflows:
   #     - test:         # Then run test,
   #         requires:   # Test requires that build passes for it to run.
   #           - build   # Finally, run the build job.
-  deploy_application: 
+  deploy_application:
     jobs:
       - build         # Run build first.
       - test:         # Then run test,
