@@ -17,7 +17,7 @@ This app was built using a service-oriented architecture. This backend part of t
 [Front End Repo](https://github.com/2108-Sugar/Sugar_FE)
 
 ## Schema
-[Imgur](https://imgur.com/a/UBgNZ3u)
+[Schema Image](https://imgur.com/a/UBgNZ3u)
 
 ## Tools Used:
 
