@@ -2,18 +2,24 @@
 
 Sugar
 -------------------------------------------
-[Tony Hsu](https://github.com/tonydhsu)
-[David Tran](https://github.com/isleofyou)
-[Billy Frey](https://https://github.com/bfrey08)
-[Didi Dodson](https://github.com/dididodson)
-[Christian Valesares](https://github.com/cvalesares)
-
 Sugar is an application that allows users within a community to create simple requests for any items they may need. Whether its power tools or some missing ingredients for a recipe you now have the power to request or lend and extra sugar out to your neighbors.  
+
+## Contributors
+- David Tran  
+[![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/david-tran7/) [![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/isleofyou)  
+- Tony Hsu  
+[![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/tonydhsu/) [![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/tonydhsu)  
+- Didi Dodson  
+[![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/didi-dodson) [![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/DidiDodson)  
+- Billy Frey   
+[![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/william-frey/) [![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/bfrey08)  
+- Christian Valesares  
+[![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/christian-valesares/) [![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/cvalesares)
 
 ## Architecture
 
 This app was built using a service-oriented architecture. This backend part of the app is responsible for exposing data for the front-end to consume and display to our end users.
-### Link to FrontEnd Repo
+
 [Front End Repo](https://github.com/2108-Sugar/Sugar_FE)
 
 ## Schema
@@ -21,13 +27,13 @@ This app was built using a service-oriented architecture. This backend part of t
 
 ## Tools Used:
 
-- AWS
-- EC2
-- S3 Bucket
-- CircleCI
-- Rails 6.1.4.4
-- Ruby 2.7.2
-- PostgreSQL
+![AWS](https://img.shields.io/badge/AWS-orange)
+![EC2](https://img.shields.io/badge/EC2-orange)
+![S3 Bucket](https://img.shields.io/badge/S3_Bucket-orange)
+![CircleCI](https://img.shields.io/badge/Circle_CI-lightgrey)
+![Rails](https://img.shields.io/badge/Rails-6.1.4.4-red)
+![Ruby](https://img.shields.io/badge/Ruby-2.7.2-red)
+![PostgresQL](https://img.shields.io/badge/PostgresQL-brightgreen)
 
 ## Setup
 
