@@ -19,7 +19,7 @@ Sugar is an application that allows users within a community to create simple re
 ## Architecture
 
 This app was built using a service-oriented architecture. This backend part of the app is responsible for exposing data for the front-end to consume and display to our end users.
-### Link to FrontEnd Repo
+
 [Front End Repo](https://github.com/2108-Sugar/Sugar_FE)
 
 ## Schema
