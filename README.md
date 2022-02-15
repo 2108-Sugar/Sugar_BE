@@ -1,6 +1,7 @@
 # README
 
 Sugar
+![CircleCI](https://img.shields.io/circleci/build/github/2108-Sugar/Sugar_BE)
 -------------------------------------------
 Sugar is an application that allows users within a community to create simple requests for any items they may need. Whether its power tools or some missing ingredients for a recipe you now have the power to request or lend and extra sugar out to your neighbors.  
 
@@ -27,13 +28,13 @@ This app was built using a service-oriented architecture. This backend part of t
 
 ## Tools Used:
 
-![AWS](https://img.shields.io/badge/AWS-orange)
+![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white)
 ![EC2](https://img.shields.io/badge/EC2-orange)
 ![S3 Bucket](https://img.shields.io/badge/S3_Bucket-orange)
 ![CircleCI](https://img.shields.io/badge/Circle_CI-lightgrey)
-![Rails](https://img.shields.io/badge/Rails-6.1.4.4-red)
-![Ruby](https://img.shields.io/badge/Ruby-2.7.2-red)
-![PostgresQL](https://img.shields.io/badge/PostgresQL-brightgreen)
+![Rails](https://img.shields.io/badge/rails-%23CC0000.svg?style=for-the-badge&logo=ruby-on-rails&logoColor=white)
+![Ruby](https://img.shields.io/badge/ruby-%23CC342D.svg?style=for-the-badge&logo=ruby&logoColor=white)
+![Postgres](https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white)
 
 ## Setup
 
